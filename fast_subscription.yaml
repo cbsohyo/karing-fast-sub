@@ -1,0 +1,163 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+- name: shadowsocks-1875022946
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹[www.v2nodes.com] ss-IT-1602...
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇳🇱[www.v2nodes.com] trojan-NL-...
+  type: trojan
+  server: de-bots4.h1cloud.net
+  port: 25267
+  password: happybirthdaydaniel
+  tls: true
+  sni: t.me/FuckTheWall
+  skip-cert-verify: true
+- name: shadowsocks-1875023031
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: shadowsocks-1875023050
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: shadowsocks-1875023009
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: shadowsocks-1875022975
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '🇮🇹[www.v2nodes.com] ss-IT-1602... #3'
+  type: ss
+  server: 202.50.253.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇮FI-🚀@VPNine1
+  type: hysteria2
+  server: fl.solomon-planet.ru
+  port: 443
+  password: 46c16b68-2553-4e5e-8176-f63d6bf6ec0c
+- name: 🇮🇹_IT_意大利_2
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 | USA 11
+  type: hysteria2
+  server: starlink-ft.251313.xyz
+  port: 443
+  password: https://xship.top
+  sni: xship.top
+  skip-cert-verify: true
+- name: US_speednode_0042
+  type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  network: tcp
+  tls: true
+  servername: mx001.zestapp778.com
+- name: shadowsocks-1875022929
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: shadowsocks-1875023048
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  network: tcp
+proxy-groups:
+- name: 🚀 自动选择
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - shadowsocks-1875022946
+  - 🇮🇹[www.v2nodes.com] ss-IT-1602...
+  - 🇳🇱[www.v2nodes.com] trojan-NL-...
+  - shadowsocks-1875023031
+  - shadowsocks-1875023050
+  - shadowsocks-1875023009
+  - shadowsocks-1875022975
+  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #3'
+  - 🇫🇮FI-🚀@VPNine1
+  - 🇮🇹_IT_意大利_2
+  - 🇺🇸 美国 | USA 11
+  - US_speednode_0042
+  - shadowsocks-1875022929
+  - shadowsocks-1875023048
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+- name: ♻️ 故障转移
+  type: fallback
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - shadowsocks-1875022946
+  - 🇮🇹[www.v2nodes.com] ss-IT-1602...
+  - 🇳🇱[www.v2nodes.com] trojan-NL-...
+  - shadowsocks-1875023031
+  - shadowsocks-1875023050
+  - shadowsocks-1875023009
+  - shadowsocks-1875022975
+  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #3'
+  - 🇫🇮FI-🚀@VPNine1
+  - 🇮🇹_IT_意大利_2
+  - 🇺🇸 美国 | USA 11
+  - US_speednode_0042
+  - shadowsocks-1875022929
+  - shadowsocks-1875023048
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+- name: DIRECT
+  type: select
+  proxies:
+  - DIRECT
+  - shadowsocks-1875022946
+  - 🇮🇹[www.v2nodes.com] ss-IT-1602...
+  - 🇳🇱[www.v2nodes.com] trojan-NL-...
+  - shadowsocks-1875023031
+  - shadowsocks-1875023050
+  - shadowsocks-1875023009
+  - shadowsocks-1875022975
+  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #3'
+  - 🇫🇮FI-🚀@VPNine1
+  - 🇮🇹_IT_意大利_2
+  - 🇺🇸 美国 | USA 11
+  - US_speednode_0042
+  - shadowsocks-1875022929
+  - shadowsocks-1875023048
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+rules:
+- MATCH,🚀 自动选择
