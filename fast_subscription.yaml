@@ -12,69 +12,30 @@ proxies:
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: kBONDXW9liFCi4h4.v.3dns.vip
   network: ws
+  tls: true
+  servername: kBONDXW9liFCi4h4.v.3dns.vip
+  skip-cert-verify: true
   ws-opts:
     path: /ws-vmess
     headers:
       Host: kBONDXW9liFCi4h4.v.3dns.vip
-- name: 🇭🇰 香港4
-  type: vmess
-  server: aZW0eunYVdvRe73k.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: aZW0eunYVdvRe73k.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: aZW0eunYVdvRe73k.v.3dns.vip
-- name: 🇸🇬 新加坡
-  type: vmess
-  server: ASaqYIDZa9WDQ9Kq.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: ASaqYIDZa9WDQ9Kq.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ASaqYIDZa9WDQ9Kq.v.3dns.vip
 proxy-groups:
-- name: 🇭🇰 香港
+- name: 🇭🇰 香港 <200ms
   type: url-test
-  url: https://www.gstatic.com/generate_204
+  url: http://connect.rom.miui.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 香港2
-  - 🇭🇰 香港4
-- name: 🇸🇬 新加坡
+- name: 🚀 自动选择(全部<200ms)
   type: url-test
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  proxies:
-  - 🇸🇬 新加坡
-- name: 🚀 自动选择
-  type: url-test
-  url: https://www.gstatic.com/generate_204
+  url: http://connect.rom.miui.com/generate_204
   interval: 300
   proxies: &id001
   - 🇭🇰 香港2
-  - 🇭🇰 香港4
-  - 🇸🇬 新加坡
 - name: ♻️ 故障转移
   type: fallback
-  url: https://www.gstatic.com/generate_204
+  url: http://connect.rom.miui.com/generate_204
   interval: 300
   proxies: *id001
 - name: DIRECT
@@ -82,7 +43,5 @@ proxy-groups:
   proxies:
   - DIRECT
   - 🇭🇰 香港2
-  - 🇭🇰 香港4
-  - 🇸🇬 新加坡
 rules:
-- MATCH,🚀 自动选择
+- MATCH,🚀 自动选择(全部<200ms)
