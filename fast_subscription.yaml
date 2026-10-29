@@ -5,159 +5,156 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: shadowsocks-1875022946
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹[www.v2nodes.com] ss-IT-1602...
-  type: ss
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇳🇱[www.v2nodes.com] trojan-NL-...
+- name: 🇭🇰 香港2
+  type: vmess
+  server: kBONDXW9liFCi4h4.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: kBONDXW9liFCi4h4.v.3dns.vip
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: kBONDXW9liFCi4h4.v.3dns.vip
+- name: 🇭🇰 香港4
+  type: vmess
+  server: aZW0eunYVdvRe73k.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: aZW0eunYVdvRe73k.v.3dns.vip
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: aZW0eunYVdvRe73k.v.3dns.vip
+- name: 🇸🇬 新加坡
+  type: vmess
+  server: ASaqYIDZa9WDQ9Kq.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: ASaqYIDZa9WDQ9Kq.v.3dns.vip
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ASaqYIDZa9WDQ9Kq.v.3dns.vip
+- name: hysteria2-1833168361
+  type: hysteria2
+  server: vp3.yysyy.online
+  port: 443
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  skip-cert-verify: true
+- name: hysteria2-1868110673
+  type: hysteria2
+  server: 138.3.208.26
+  port: 50160
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: '1'
+  skip-cert-verify: true
+- name: hysteria2-1853341745
+  type: hysteria2
+  server: 45.32.10.7
+  port: 443
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  skip-cert-verify: true
+- name: trojan-1827149654
   type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
+  server: 45.32.52.173
+  port: 8886
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   tls: true
-  sni: t.me/FuckTheWall
+  sni: 45.32.52.173
   skip-cert-verify: true
-- name: shadowsocks-1875023031
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: shadowsocks-1875023050
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: shadowsocks-1875023009
-  type: ss
-  server: 202.50.253.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: shadowsocks-1875022975
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: '🇮🇹[www.v2nodes.com] ss-IT-1602... #3'
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇮FI-🚀@VPNine1
+- name: hysteria2-1939845083
   type: hysteria2
-  server: fl.solomon-planet.ru
-  port: 443
-  password: 46c16b68-2553-4e5e-8176-f63d6bf6ec0c
-- name: 🇮🇹_IT_意大利_2
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 | USA 11
-  type: hysteria2
-  server: starlink-ft.251313.xyz
-  port: 443
-  password: https://xship.top
-  sni: xship.top
+  server: rb.mangshe.xyz
+  port: 2060
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   skip-cert-verify: true
-- name: US_speednode_0042
-  type: vless
-  server: mx001.zestapp778.com
-  port: 19167
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  network: tcp
-  tls: true
-  servername: mx001.zestapp778.com
-- name: shadowsocks-1875022929
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: shadowsocks-1875023048
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  network: tcp
+- name: hysteria2-1939845046
+  type: hysteria2
+  server: freedom.chenlan.top
+  port: 12765
+  password: STYyftThFn
+- name: hysteria2-1828371120
+  type: hysteria2
+  server: 8.209.247.109
+  port: 443
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  skip-cert-verify: true
 proxy-groups:
-- name: 🚀 自动选择
+- name: 🇯🇵 日本 <200ms
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - shadowsocks-1875022946
-  - 🇮🇹[www.v2nodes.com] ss-IT-1602...
-  - 🇳🇱[www.v2nodes.com] trojan-NL-...
-  - shadowsocks-1875023031
-  - shadowsocks-1875023050
-  - shadowsocks-1875023009
-  - shadowsocks-1875022975
-  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #3'
-  - 🇫🇮FI-🚀@VPNine1
-  - 🇮🇹_IT_意大利_2
-  - 🇺🇸 美国 | USA 11
-  - US_speednode_0042
-  - shadowsocks-1875022929
-  - shadowsocks-1875023048
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - hysteria2-1833168361
+  - hysteria2-1868110673
+  - hysteria2-1853341745
+  - trojan-1827149654
+  - hysteria2-1939845083
+  - hysteria2-1939845046
+  - hysteria2-1828371120
+- name: 🇭🇰 香港 <200ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 香港2
+  - 🇭🇰 香港4
+- name: 🇸🇬 新加坡 <200ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇬 新加坡
+- name: 🚀 自动选择(全部<200ms)
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies: &id001
+  - 🇭🇰 香港2
+  - 🇭🇰 香港4
+  - 🇸🇬 新加坡
+  - hysteria2-1833168361
+  - hysteria2-1868110673
+  - hysteria2-1853341745
+  - trojan-1827149654
+  - hysteria2-1939845083
+  - hysteria2-1939845046
+  - hysteria2-1828371120
 - name: ♻️ 故障转移
   type: fallback
   url: https://www.gstatic.com/generate_204
   interval: 300
-  proxies:
-  - shadowsocks-1875022946
-  - 🇮🇹[www.v2nodes.com] ss-IT-1602...
-  - 🇳🇱[www.v2nodes.com] trojan-NL-...
-  - shadowsocks-1875023031
-  - shadowsocks-1875023050
-  - shadowsocks-1875023009
-  - shadowsocks-1875022975
-  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #3'
-  - 🇫🇮FI-🚀@VPNine1
-  - 🇮🇹_IT_意大利_2
-  - 🇺🇸 美国 | USA 11
-  - US_speednode_0042
-  - shadowsocks-1875022929
-  - shadowsocks-1875023048
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  proxies: *id001
 - name: DIRECT
   type: select
   proxies:
   - DIRECT
-  - shadowsocks-1875022946
-  - 🇮🇹[www.v2nodes.com] ss-IT-1602...
-  - 🇳🇱[www.v2nodes.com] trojan-NL-...
-  - shadowsocks-1875023031
-  - shadowsocks-1875023050
-  - shadowsocks-1875023009
-  - shadowsocks-1875022975
-  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #3'
-  - 🇫🇮FI-🚀@VPNine1
-  - 🇮🇹_IT_意大利_2
-  - 🇺🇸 美国 | USA 11
-  - US_speednode_0042
-  - shadowsocks-1875022929
-  - shadowsocks-1875023048
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇭🇰 香港2
+  - 🇭🇰 香港4
+  - 🇸🇬 新加坡
+  - hysteria2-1833168361
+  - hysteria2-1868110673
+  - hysteria2-1853341745
+  - trojan-1827149654
+  - hysteria2-1939845083
+  - hysteria2-1939845046
+  - hysteria2-1828371120
 rules:
-- MATCH,🚀 自动选择
+- MATCH,🚀 自动选择(全部<200ms)
