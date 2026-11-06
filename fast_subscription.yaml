@@ -180,7 +180,6 @@ proxy-groups:
   - '🇸🇬[www.v2nodes.com] vless-SG #1'
   - 🇯🇵[www.v2nodes.com] vless-JP
   - '🏳[www.v2nodes.com] vless- #22'
-  - '🏳[www.v2nodes.com] vless- #24'
 - name: 🇭🇰 香港 <200ms
   type: url-test
   url: http://connect.rom.miui.com/generate_204
@@ -211,7 +210,7 @@ proxy-groups:
   type: url-test
   url: http://connect.rom.miui.com/generate_204
   interval: 300
-  proxies: &id001
+  proxies:
   - 🇭🇰 香港4
   - 🇭🇰 香港2
   - 🇸🇬 新加坡
@@ -230,7 +229,21 @@ proxy-groups:
   type: fallback
   url: http://connect.rom.miui.com/generate_204
   interval: 300
-  proxies: *id001
+  proxies:
+  - 🇭🇰 香港4
+  - 🇭🇰 香港2
+  - 🇸🇬 新加坡
+  - trojan-1939846065
+  - trojan-1827188340
+  - 🇸🇬[www.v2nodes.com] vless-SG-1...
+  - '🇸🇬[www.v2nodes.com] vless-SG-1... #1'
+  - trojan-1939846054
+  - '🇸🇬[www.v2nodes.com] vless-SG #1'
+  - 🇯🇵[www.v2nodes.com] vless-JP
+  - '🏳[www.v2nodes.com] vless- #22'
+  - 🇯🇵[www.v2nodes.com] vless-JP-1...
+  - '🇯🇵[www.v2nodes.com] vless-JP-1... #9'
+  - '🇸🇬[www.v2nodes.com] vless-SG-1... #9'
 - name: DIRECT
   type: select
   proxies:
