@@ -5,36 +5,6 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇸🇬 新加坡
-  type: vmess
-  server: ASaqYIDZa9WDQ9Kq.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: ASaqYIDZa9WDQ9Kq.v.3dns.vip
-  skip-cert-verify: true
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ASaqYIDZa9WDQ9Kq.v.3dns.vip
-- name: 🇭🇰 香港4
-  type: vmess
-  server: aZW0eunYVdvRe73k.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: aZW0eunYVdvRe73k.v.3dns.vip
-  skip-cert-verify: true
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: aZW0eunYVdvRe73k.v.3dns.vip
 - name: 🇭🇰 香港2
   type: vmess
   server: kBONDXW9liFCi4h4.v.3dns.vip
@@ -50,13 +20,27 @@ proxies:
     path: /ws-vmess
     headers:
       Host: kBONDXW9liFCi4h4.v.3dns.vip
+- name: 🇸🇬 新加坡
+  type: vmess
+  server: ASaqYIDZa9WDQ9Kq.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: ASaqYIDZa9WDQ9Kq.v.3dns.vip
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ASaqYIDZa9WDQ9Kq.v.3dns.vip
 proxy-groups:
 - name: 🇭🇰 香港 <200ms
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 香港4
   - 🇭🇰 香港2
 - name: 🇸🇬 新加坡 <200ms
   type: url-test
@@ -69,23 +53,20 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡
-  - 🇭🇰 香港4
   - 🇭🇰 香港2
+  - 🇸🇬 新加坡
 - name: ♻️ 故障转移
   type: fallback
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡
-  - 🇭🇰 香港4
   - 🇭🇰 香港2
+  - 🇸🇬 新加坡
 - name: DIRECT
   type: select
   proxies:
   - DIRECT
-  - 🇸🇬 新加坡
-  - 🇭🇰 香港4
   - 🇭🇰 香港2
+  - 🇸🇬 新加坡
 rules:
 - MATCH,🚀 自动选择(全部<200ms)
