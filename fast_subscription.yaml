@@ -5,6 +5,29 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+- name: 🇦🇺 澳大利亚 | AUS
+  type: trojan
+  server: 45.32.241.180
+  port: 443
+  password: Trojan@82164024
+  tls: true
+  sni: au.tronsg.com
+  skip-cert-verify: true
+- name: trojan-1932509804
+  type: trojan
+  server: 45.63.30.142
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  skip-cert-verify: true
+- name: xx|3f1b|puddincat07@Telegram
+  type: trojan
+  server: au.tronsg.com
+  port: 443
+  password: Trojan@82164024
+  tls: true
+  sni: au.tronsg.com
+  skip-cert-verify: true
 - name: 🇭🇰 香港2
   type: vmess
   server: kBONDXW9liFCi4h4.v.3dns.vip
@@ -50,7 +73,559 @@ proxies:
     path: /ws-vmess
     headers:
       Host: ASaqYIDZa9WDQ9Kq.v.3dns.vip
+- name: trojan-1939846065
+  type: trojan
+  server: 149.28.130.108
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: searchcreativejobsandshowcaseyourartistictalents.com
+- name: trojan-1827188340
+  type: trojan
+  server: 139.180.146.200
+  port: 8886
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  tls: true
+  sni: 139.180.146.200
+  skip-cert-verify: true
+- name: vmess-1837386984
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: vmess-1853342713
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: vmess-1853348092
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: vless-1853439676
+  type: vless
+  server: 139.162.27.96
+  port: 443
+  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
+  network: tcp
+  tls: true
+  servername: aka.ms
+  skip-cert-verify: true
+- name: trojan-1849374991
+  type: trojan
+  server: 66.23.203.21
+  port: 59689
+  password: ae7eb4dwyaz25pxwgq59
+  tls: true
+  sni: 66.23.203.21
+  skip-cert-verify: true
+- name: trojan-1929965354
+  type: trojan
+  server: 66.163.114.45
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: cdn.findconnectwithemployersandbuildprofessionalnetwork.com
+- name: trojan-1943021612
+  type: trojan
+  server: 167.88.61.175
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
+- name: trojan-1946215896
+  type: trojan
+  server: 66.163.112.121
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: 66.163.112.121
+  skip-cert-verify: true
+- name: trojan-1827955817
+  type: trojan
+  server: 69.164.240.85
+  port: 50875
+  password: nwilryafgkyvuxauc8pz
+  tls: true
+  sni: 69.164.240.85
+  skip-cert-verify: true
+- name: trojan-1941512533
+  type: trojan
+  server: 167.88.61.198
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: cdn.browseseniorrolesandenhanceyourcareertoday.com
+- name: trojan-1939845099
+  type: trojan
+  server: 167.88.61.20
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: api.browseseniorrolesandenhanceyourcareertoday.com
+- name: trojan-1941512524
+  type: trojan
+  server: 167.88.61.193
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: browseseniorrolesandenhanceyourcareertoday.com
+- name: trojan-1935612269
+  type: trojan
+  server: 66.163.112.242
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: api.nextjobopportunityandclaimyouridealrole.com
+  skip-cert-verify: true
+- name: trojan-1940485917
+  type: trojan
+  server: 66.163.114.132
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: 66.163.114.132
+  skip-cert-verify: true
+- name: trojan-1939194006
+  type: trojan
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  tls: true
+- name: trojan-1935007688
+  type: trojan
+  server: 66.163.114.245
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: findconnectwithemployersandbuildprofessionalnetwork.com
+  skip-cert-verify: true
+- name: trojan-1940485908
+  type: trojan
+  server: 66.163.112.13
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: 66.163.112.13
+  skip-cert-verify: true
+- name: trojan-1938560222
+  type: trojan
+  server: 66.163.114.114
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: 66.163.114.114
+  skip-cert-verify: true
+- name: trojan-1935007685
+  type: trojan
+  server: 66.163.112.76
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: api.unlockyourfuturefindyourperfectcareer.com
+  skip-cert-verify: true
+- name: trojan-1924748552
+  type: trojan
+  server: www.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: 242a3d8eee5e4ed1a6bfa4141d549a25
+  tls: true
+  skip-cert-verify: true
+- name: trojan-1929965347
+  type: trojan
+  server: 66.163.114.126
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: resources.findconnectwithemployersandbuildprofessionalnetwork.com
+- name: trojan-1939845049
+  type: trojan
+  server: 170.101.101.19
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: learn.explorecreativejobsandenhanceyourcareerportfolio.com
+- name: trojan-1930077586
+  type: trojan
+  server: 66.163.112.142
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: cdn.unlockyourfuturefindyourperfectcareer.com
+  skip-cert-verify: true
+- name: trojan-1929965329
+  type: trojan
+  server: 66.163.112.31
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: unlockyourfuturefindyourperfectcareer.com
+- name: trojan-1943481639
+  type: trojan
+  server: 167.88.61.85
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: resources.browseseniorrolesandenhanceyourcareertoday.com
+- name: trojan-1929965340
+  type: trojan
+  server: 216.152.155.23
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: courses.nextjobopportunityandclaimyouridealrole.com
+- name: trojan-1931254753
+  type: trojan
+  server: 169.197.140.169
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: api.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+- name: trojan-1941512528
+  type: trojan
+  server: 169.197.140.245
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: www.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+- name: trojan-1943480639
+  type: trojan
+  server: 169.197.140.218
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+- name: trojan-1875022971
+  type: trojan
+  server: 216.106.186.32
+  port: 443
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  tls: true
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: true
+- name: trojan-1935805071
+  type: trojan
+  server: 216.152.156.42
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: blog.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+  skip-cert-verify: true
+- name: trojan-1947502359
+  type: trojan
+  server: 170.101.101.211
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: api.explorecreativejobsandenhanceyourcareerportfolio.com
+  skip-cert-verify: true
+- name: trojan-1941512529
+  type: trojan
+  server: 170.101.101.53
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: www.explorecreativejobsandenhanceyourcareerportfolio.com
+- name: trojan-1944436566
+  type: trojan
+  server: 170.101.101.112
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: resources.explorecreativejobsandenhanceyourcareerportfolio.com
+- name: trojan-1935007698
+  type: trojan
+  server: 169.197.140.214
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: courses.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+  skip-cert-verify: true
+- name: trojan-1935007690
+  type: trojan
+  server: 66.163.112.147
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: courses.unlockyourfuturefindyourperfectcareer.com
+  skip-cert-verify: true
+- name: trojan-1939845053
+  type: trojan
+  server: 169.197.140.224
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: resources.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+- name: trojan-1943481633
+  type: trojan
+  server: 169.197.140.171
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+- name: trojan-1877412058
+  type: trojan
+  server: 216.106.186.33
+  port: 443
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  tls: true
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+- name: trojan-1946215903
+  type: trojan
+  server: us001.zestapp778.com
+  port: 57277
+  password: 5t6i121em5lkmsmk
+  tls: true
+  sni: us001.zestapp778.com
+  skip-cert-verify: true
+- name: trojan-1938557333
+  type: trojan
+  server: 66.163.112.171
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: learn.unlockyourfuturefindyourperfectcareer.com
+- name: vless-1939847007
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  network: ws
+  ws-opts:
+    path: /
+- name: vmess-1919459711
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  servername: 141.95.65.9
+  skip-cert-verify: true
+- name: trojan-1941511538
+  type: trojan
+  server: 193.108.119.193
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: resources.iloverussia2026.com
+- name: trojan-1939844058
+  type: trojan
+  server: 193.108.119.29
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: blog.iloverussia2026.com
+- name: trojan-1943021601
+  type: trojan
+  server: 193.108.119.96
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: learn.iloverussia2026.com
+- name: trojan-1944047326
+  type: trojan
+  server: 193.108.119.15
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: courses.iloverussia2026.com
+  skip-cert-verify: true
+- name: vmess-1853452291
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  servername: supervpn.super.com
+  skip-cert-verify: true
+- name: trojan-1941513501
+  type: trojan
+  server: th001.zestapp778.com
+  port: 33079
+  password: 5t6i121em5lkmsmk
+  tls: true
+  sni: th001.zestapp778.com
+  skip-cert-verify: true
+- name: trojan-1943481632
+  type: trojan
+  server: mx001.zestapp778.com
+  port: 15083
+  password: 5t6i121em5lkmsmk
+  tls: true
+  sni: mx001.zestapp778.com
+  skip-cert-verify: true
+- name: trojan-1947014532
+  type: trojan
+  server: ca001.zestapp778.com
+  port: 46977
+  password: 5t6i121em5lkmsmk
+  tls: true
+  sni: ca001.zestapp778.com
+  skip-cert-verify: true
+- name: trojan-1939845052
+  type: trojan
+  server: 216.152.147.201
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: resources.connectingpeoplewithgreatjobs.com
+- name: vmess-1853452235
+  type: vmess
+  server: 45.90.106.24
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  servername: 45.90.106.24
+  skip-cert-verify: true
+- name: trojan-1933715118
+  type: trojan
+  server: 64.176.163.182
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
+  skip-cert-verify: true
+- name: Sweden_Spanga_trojan_10126
+  type: trojan
+  server: 70.34.207.14
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  tls: true
+  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #3'
+  type: vless
+  server: 138.124.86.230
+  port: 48115
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  network: grpc
+  tls: true
+  servername: 138-124-86-230.sslip.io
+- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: '🇵🇱[www.v2nodes.com] vless-PL-1... #5'
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  network: tcp
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: true
+- name: '🏳[www.v2nodes.com] vless- #16'
+  type: vless
+  server: 150.95.109.109
+  port: 2086
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  network: tcp
 proxy-groups:
+- name: 🇺🇸 美国 <800ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - trojan-1849374991
+  - trojan-1929965354
+  - trojan-1943021612
+  - trojan-1946215896
+  - trojan-1827955817
+  - trojan-1941512533
+  - trojan-1939845099
+  - trojan-1941512524
+  - trojan-1935612269
+  - trojan-1940485917
+  - trojan-1939194006
+  - trojan-1935007688
+  - trojan-1940485908
+  - trojan-1938560222
+  - trojan-1935007685
+  - trojan-1924748552
+  - trojan-1929965347
+  - trojan-1939845049
+  - trojan-1930077586
+  - trojan-1929965329
+  - trojan-1943481639
+  - trojan-1929965340
+  - trojan-1931254753
+  - trojan-1941512528
+  - trojan-1943480639
+  - trojan-1875022971
+  - trojan-1935805071
+  - trojan-1947502359
+  - trojan-1941512529
+  - trojan-1944436566
+  - trojan-1935007698
+  - trojan-1935007690
+  - trojan-1939845053
+  - trojan-1943481633
+  - trojan-1877412058
+  - trojan-1946215903
+  - trojan-1938557333
+- name: 🇸🇬 新加坡 <800ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇬 新加坡
+  - trojan-1939846065
+  - trojan-1827188340
+  - vmess-1837386984
+  - vmess-1853342713
+  - vmess-1853348092
+  - vless-1853439676
+- name: 🇩🇪 德国 <800ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - vmess-1919459711
+  - trojan-1941511538
+  - trojan-1939844058
+  - trojan-1943021601
+  - trojan-1944047326
+  - vmess-1853452291
+- name: 🇦🇺 澳大利亚 <800ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇺 澳大利亚 | AUS
+  - trojan-1932509804
+  - xx|3f1b|puddincat07@Telegram
+- name: 🇸🇪 瑞典 <800ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - Sweden_Spanga_trojan_10126
+  - '🇸🇪[www.v2nodes.com] vless-SE-1... #3'
+  - '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
 - name: 🇭🇰 香港 <800ms
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,17 +633,121 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港2
   - 🇭🇰 香港4
-- name: 🇸🇬 新加坡 <800ms
+- name: 🇨🇦 加拿大 <800ms
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡
+  - trojan-1947014532
+  - trojan-1939845052
+- name: 🇰🇷 韩国 <800ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - vless-1939847007
+- name: 🇹🇭 泰国 <800ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - trojan-1941513501
+- name: 🇲🇽 墨西哥 <800ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - trojan-1943481632
+- name: 🇳🇱 荷兰 <800ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - vmess-1853452235
+- name: 🇮🇱 以色列 <800ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - trojan-1933715118
+- name: 🇵🇱 波兰 <800ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - '🇵🇱[www.v2nodes.com] vless-PL-1... #5'
+- name: 🇻🇳 越南 <800ms
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - '🏳[www.v2nodes.com] vless- #16'
 - name: ⭐ 稳定优先(连续≥2轮)
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
+  - trojan-1939846065
+  - trojan-1827188340
+  - vmess-1837386984
+  - vmess-1853342713
+  - vmess-1853348092
+  - trojan-1932509804
+  - trojan-1849374991
+  - vless-1939847007
+  - trojan-1929965354
+  - trojan-1943021612
+  - trojan-1946215896
+  - trojan-1827955817
+  - vless-1853439676
+  - vmess-1919459711
+  - trojan-1941512533
+  - trojan-1939845099
+  - trojan-1941512524
+  - trojan-1935612269
+  - trojan-1940485917
+  - trojan-1939194006
+  - trojan-1935007688
+  - trojan-1941513501
+  - trojan-1940485908
+  - trojan-1938560222
+  - trojan-1935007685
+  - trojan-1924748552
+  - trojan-1929965347
+  - trojan-1939845049
+  - trojan-1930077586
+  - trojan-1929965329
+  - trojan-1947014532
+  - trojan-1943481639
+  - trojan-1929965340
+  - trojan-1931254753
+  - trojan-1941512528
+  - trojan-1943480639
+  - vmess-1853452235
+  - trojan-1875022971
+  - trojan-1935805071
+  - trojan-1947502359
+  - trojan-1941512529
+  - trojan-1944436566
+  - trojan-1939845052
+  - trojan-1935007698
+  - trojan-1941511538
+  - trojan-1939844058
+  - trojan-1943021601
+  - trojan-1933715118
+  - trojan-1935007690
+  - trojan-1939845053
+  - trojan-1943481633
+  - trojan-1944047326
+  - vmess-1853452291
+  - trojan-1877412058
+  - trojan-1938557333
+  - Sweden_Spanga_trojan_10126
+  - '🇵🇱[www.v2nodes.com] vless-PL-1... #5'
+  - '🇸🇪[www.v2nodes.com] vless-SE-1... #3'
+  - '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
+  - '🏳[www.v2nodes.com] vless- #16'
+  - 🇦🇺 澳大利亚 | AUS
   - 🇭🇰 香港2
   - 🇭🇰 香港4
   - 🇸🇬 新加坡
@@ -77,23 +756,215 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
+  - 🇦🇺 澳大利亚 | AUS
+  - trojan-1932509804
+  - xx|3f1b|puddincat07@Telegram
   - 🇭🇰 香港2
   - 🇭🇰 香港4
   - 🇸🇬 新加坡
+  - trojan-1939846065
+  - trojan-1827188340
+  - vmess-1837386984
+  - vmess-1853342713
+  - vmess-1853348092
+  - vless-1853439676
+  - trojan-1849374991
+  - trojan-1929965354
+  - trojan-1943021612
+  - trojan-1946215896
+  - trojan-1827955817
+  - trojan-1941512533
+  - trojan-1939845099
+  - trojan-1941512524
+  - trojan-1935612269
+  - trojan-1940485917
+  - trojan-1939194006
+  - trojan-1935007688
+  - trojan-1940485908
+  - trojan-1938560222
+  - trojan-1935007685
+  - trojan-1924748552
+  - trojan-1929965347
+  - trojan-1939845049
+  - trojan-1930077586
+  - trojan-1929965329
+  - trojan-1943481639
+  - trojan-1929965340
+  - trojan-1931254753
+  - trojan-1941512528
+  - trojan-1943480639
+  - trojan-1875022971
+  - trojan-1935805071
+  - trojan-1947502359
+  - trojan-1941512529
+  - trojan-1944436566
+  - trojan-1935007698
+  - trojan-1935007690
+  - trojan-1939845053
+  - trojan-1943481633
+  - trojan-1877412058
+  - trojan-1946215903
+  - trojan-1938557333
+  - vless-1939847007
+  - vmess-1919459711
+  - trojan-1941511538
+  - trojan-1939844058
+  - trojan-1943021601
+  - trojan-1944047326
+  - vmess-1853452291
+  - trojan-1941513501
+  - trojan-1943481632
+  - trojan-1947014532
+  - trojan-1939845052
+  - vmess-1853452235
+  - trojan-1933715118
+  - Sweden_Spanga_trojan_10126
+  - '🇸🇪[www.v2nodes.com] vless-SE-1... #3'
+  - '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
+  - '🇵🇱[www.v2nodes.com] vless-PL-1... #5'
+  - '🏳[www.v2nodes.com] vless- #16'
 - name: ♻️ 故障转移
   type: fallback
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
+  - 🇦🇺 澳大利亚 | AUS
+  - trojan-1932509804
+  - xx|3f1b|puddincat07@Telegram
   - 🇭🇰 香港2
   - 🇭🇰 香港4
   - 🇸🇬 新加坡
+  - trojan-1939846065
+  - trojan-1827188340
+  - vmess-1837386984
+  - vmess-1853342713
+  - vmess-1853348092
+  - vless-1853439676
+  - trojan-1849374991
+  - trojan-1929965354
+  - trojan-1943021612
+  - trojan-1946215896
+  - trojan-1827955817
+  - trojan-1941512533
+  - trojan-1939845099
+  - trojan-1941512524
+  - trojan-1935612269
+  - trojan-1940485917
+  - trojan-1939194006
+  - trojan-1935007688
+  - trojan-1940485908
+  - trojan-1938560222
+  - trojan-1935007685
+  - trojan-1924748552
+  - trojan-1929965347
+  - trojan-1939845049
+  - trojan-1930077586
+  - trojan-1929965329
+  - trojan-1943481639
+  - trojan-1929965340
+  - trojan-1931254753
+  - trojan-1941512528
+  - trojan-1943480639
+  - trojan-1875022971
+  - trojan-1935805071
+  - trojan-1947502359
+  - trojan-1941512529
+  - trojan-1944436566
+  - trojan-1935007698
+  - trojan-1935007690
+  - trojan-1939845053
+  - trojan-1943481633
+  - trojan-1877412058
+  - trojan-1946215903
+  - trojan-1938557333
+  - vless-1939847007
+  - vmess-1919459711
+  - trojan-1941511538
+  - trojan-1939844058
+  - trojan-1943021601
+  - trojan-1944047326
+  - vmess-1853452291
+  - trojan-1941513501
+  - trojan-1943481632
+  - trojan-1947014532
+  - trojan-1939845052
+  - vmess-1853452235
+  - trojan-1933715118
+  - Sweden_Spanga_trojan_10126
+  - '🇸🇪[www.v2nodes.com] vless-SE-1... #3'
+  - '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
+  - '🇵🇱[www.v2nodes.com] vless-PL-1... #5'
+  - '🏳[www.v2nodes.com] vless- #16'
 - name: DIRECT
   type: select
   proxies:
   - DIRECT
+  - 🇦🇺 澳大利亚 | AUS
+  - trojan-1932509804
+  - xx|3f1b|puddincat07@Telegram
   - 🇭🇰 香港2
   - 🇭🇰 香港4
   - 🇸🇬 新加坡
+  - trojan-1939846065
+  - trojan-1827188340
+  - vmess-1837386984
+  - vmess-1853342713
+  - vmess-1853348092
+  - vless-1853439676
+  - trojan-1849374991
+  - trojan-1929965354
+  - trojan-1943021612
+  - trojan-1946215896
+  - trojan-1827955817
+  - trojan-1941512533
+  - trojan-1939845099
+  - trojan-1941512524
+  - trojan-1935612269
+  - trojan-1940485917
+  - trojan-1939194006
+  - trojan-1935007688
+  - trojan-1940485908
+  - trojan-1938560222
+  - trojan-1935007685
+  - trojan-1924748552
+  - trojan-1929965347
+  - trojan-1939845049
+  - trojan-1930077586
+  - trojan-1929965329
+  - trojan-1943481639
+  - trojan-1929965340
+  - trojan-1931254753
+  - trojan-1941512528
+  - trojan-1943480639
+  - trojan-1875022971
+  - trojan-1935805071
+  - trojan-1947502359
+  - trojan-1941512529
+  - trojan-1944436566
+  - trojan-1935007698
+  - trojan-1935007690
+  - trojan-1939845053
+  - trojan-1943481633
+  - trojan-1877412058
+  - trojan-1946215903
+  - trojan-1938557333
+  - vless-1939847007
+  - vmess-1919459711
+  - trojan-1941511538
+  - trojan-1939844058
+  - trojan-1943021601
+  - trojan-1944047326
+  - vmess-1853452291
+  - trojan-1941513501
+  - trojan-1943481632
+  - trojan-1947014532
+  - trojan-1939845052
+  - vmess-1853452235
+  - trojan-1933715118
+  - Sweden_Spanga_trojan_10126
+  - '🇸🇪[www.v2nodes.com] vless-SE-1... #3'
+  - '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
+  - '🇵🇱[www.v2nodes.com] vless-PL-1... #5'
+  - '🏳[www.v2nodes.com] vless- #16'
 rules:
 - MATCH,🚀 自动选择(全部<800ms)
